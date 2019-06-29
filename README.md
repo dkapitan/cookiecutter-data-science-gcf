@@ -1,10 +1,10 @@
-# Cookiecutter Data Science
+# Cookiecutter Data Science GCF
 
 _A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
 
 
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
-
+#### A fork of [the orgical cookiecutter](http://drivendata.github.io/cookiecutter-data-science/)
+* /gcf library intended for deploying Python3 Google Cloud Functions (GCF) 
 
 ### Requirements to use the cookiecutter template:
 -----------
@@ -26,7 +26,7 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/drivendata/cookiecutter-data-science
+    cookiecutter https://github.com/dkapitan/cookiecutter-data-science-gcf
 
 
 [![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
@@ -48,6 +48,8 @@ The directory structure of your new project looks like this:
 │   └── raw            <- The original, immutable data dump.
 │
 ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+|
+├── gcf                <- Code for Google Cloud Function
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
@@ -63,7 +65,7 @@ The directory structure of your new project looks like this:
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
-├── src                <- Source code for use in this project.
+├── src                <- Source code for deploying a Python3 Google Cloud Function
 │   ├── __init__.py    <- Makes src a Python module
 │   │
 │   ├── data           <- Scripts to download or generate data
